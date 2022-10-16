@@ -12,8 +12,17 @@ Tested: September 9, 2022: Passed on Edge and Chrome browsers.
 <html lang="en-US">
 <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hamby's Bicycles</title>
         <link rel="stylesheet" href="Hamby'sBicyclesSS.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
 </head>
 <!--Website Title and Description-->
 
@@ -31,7 +40,8 @@ Tested: September 9, 2022: Passed on Edge and Chrome browsers.
     <br>
         
     <!--Navigation Menu-->
-    <nav id="nav_list">
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
         <ul>
             <li><a href="index.htm">Home</a></li>
             <li><a href="rentals.htm">Rentals</a></li>
@@ -40,6 +50,7 @@ Tested: September 9, 2022: Passed on Edge and Chrome browsers.
             <li><a href="contact.htm">Contact</a></li>
         </ul>
     </nav>
+
 
     <br>
     <img class="bicycle" src="Bicycle_photo.jpg">
