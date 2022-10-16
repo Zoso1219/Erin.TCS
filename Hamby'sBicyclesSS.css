@@ -1,5 +1,22 @@
 /*Style Sheet for Hamby's Bicycles Web Page*/
 
+/*Media queries*/
+@media only screen (min-width: 480px) and (max-width: 1000px) {}
+
+@media screen (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+@media screen (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media screen (resolution: infinite) {}
+
 * { margin: 0; padding: 0; }
 /*Adjust the style for the body*/
 body {
