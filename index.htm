@@ -6,7 +6,7 @@ Use: To show bicycle's for sale and other services offered.
 Author: Erin Hamby
 School/Term: Southern Illinois University, Fall 2022
 Developed: September 9, 2022
-Tested: September 9, 2022: Passed on Edge and Chrome browsers.
+Tested: October 20, 2022: Passed on Edge and Chrome browsers.
 ******************************************************************************
 -->
 <html lang="en-US">
@@ -16,6 +16,7 @@ Tested: September 9, 2022: Passed on Edge and Chrome browsers.
         <title>Hamby's Bicycles</title>
         <link rel="stylesheet" href="Hamby'sBicyclesSS.css">
         <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="js/jquery.slicknav.min.js"></script>
         <script type="text/javascript">
@@ -28,10 +29,11 @@ Tested: September 9, 2022: Passed on Edge and Chrome browsers.
 
 <!--Homepage Body-->
 <body>
- 
+
     <!--Header for Homepage-->
     <header>
     <h1>Hamby's Bicycles</h1>
+
 <br>
     <p>This is an online bicycle shop ran by, <em>yours truly</em>, Erin Hamby.</p>
     <p>You can purchase, sell, trade, and request repairs through this portal.</p>
@@ -49,12 +51,13 @@ Tested: September 9, 2022: Passed on Edge and Chrome browsers.
             <li><a href="services.htm">Services</a></li>
             <li><a href="contact.htm">Contact</a></li>
         </ul>
-    </nav>
-
-
+<br>
+<br>
+<br>
+<!--Bicycle image-->
     <br>
     <figure>
-        <img class="bicycle" src="Bicycle_photo.jpg">
+        <div id="bicycle"></div>
         <figcaption>Specialized Bicycle</figcaption>
     </figure>
 
@@ -68,6 +71,9 @@ Tested: September 9, 2022: Passed on Edge and Chrome browsers.
         <li>Bennys Toys Adult Beach Cruiser Bike 26 Inch Wheels Bicycle</li>
     </ol>
 <br>
+
+<!--Audio for Homepage-->
+<audio src="website_music.mp3" controls autoplay loop></audio>
 
 <!--Contact information-->
     <h3>Contact Us:</h3>
