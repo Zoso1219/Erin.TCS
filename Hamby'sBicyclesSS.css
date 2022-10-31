@@ -264,9 +264,9 @@ label, input, select {
 }
 
 label {
-    float: left;
+    float: none;
     width: 12em;
-    text-align: right;
+    text-align: none;
 }
 
 input, select {
