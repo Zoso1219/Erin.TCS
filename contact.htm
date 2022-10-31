@@ -6,7 +6,7 @@ Use: Show Bicycle Sales
 Author: Erin Hamby
 School/Term: Southern Illinois University, Fall 2022
 Developed: September 22, 2022
-Tested: September 22, 2022: Passed on Edge and Chrome browsers.
+Tested: October 30, 2022: Passed on Edge and Chrome browsers.
 ******************************************************************************
 -->
 <html lang="en-US">
@@ -19,7 +19,7 @@ Tested: September 22, 2022: Passed on Edge and Chrome browsers.
  <header>
 </header>
     <!--Navigation Menu-->
-    <nav id="nav_list">
+    <nav id="nav_menu">
         <ul>
             <li><a href="index.htm">Home</a></li>
             <li><a href="rentals.htm">Rentals</a></li>
@@ -28,6 +28,60 @@ Tested: September 22, 2022: Passed on Edge and Chrome browsers.
             <li><a href="contact.htm">Contact</a></li>
         </ul>
     </nav>
-    
+    <br>
+    <br>
+    <!--Contact us Form-->
+    <form id="contact_form" action="response.htm" method="post"><br>
+        <h2>Contact us!</h2><br>
+        <p>Please fill out the information below, and we will contact you ASAP.</p><br>
+        <br>
+        <p>Full Name: <input type="text" id="name" minlength="15" maxlength="25" required></p>
+        <p>Address: <input type="text" id="address" minlength="15" maxlength="50" required></p>
+        <p>City: <input type="text" id="city" minlength="4" maxlength="25" required></p>
+        <p>State: <select id="state" size="5" required>
+            <option value="illinois">Illinois</option>
+            <option value="kentucky">Kentucky</option>
+            <option value="missouri">Missouri</option>
+            <option value="indiana">Indiana</option>
+            <option value="iowa">Iowa</option>
+            <option value="tennessee">Tennessee</option>
+            <option value="georgia">Georgia</option>
+            <option value="sdakota">South Dakota</option>
+        </select></p>
+        <p>Zip Code: <input type="text" id="zip" minlength="5" maxlength="10" required
+            pattern="\d{5}([\-]\d{4})?"></p>
+        <p>Phone Number: <input type="tel" id="phone" minlength="10" maxlength="12" required
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            title="Must be 999-999-9999"></p>
+        <p>Email Address: <input type="email" id="email" minlength="10" maxlength="25" required></p>
+        <p>Submission Date: <input type="date" id="submission" required
+            pattern="[01]?\d\/[0-3]\d\/\d{4}"></p>
+        <fieldset> 
+        <legend>Inquiry Type: </legend>
+        <input type="checkbox" name="sales" id="sales" value="sales">
+        <label for="sales">Sales</label>
+        <input type="checkbox" name="service" id="service" value="service">
+        <label for="service">Service</label>
+        <input type="checkbox" name="rental" id="rental" value="rental">
+        <label for="rental">Rental</label>
+        </fieldset>
+        <fieldset>
+        <legend>Bicycle Type: </legend>
+        <input type="radio" name="grace" value="grace">City Bike Grace<br>
+        <input type="radio" name="gusto" value="gusto">City Bike Gusto<br>
+        <input type="radio" name="sidewinder" value="sidewinder">Schwinn Sidewinder Mountain Bike<br>
+        <input type="radio" name="mongoose" value="mongoose">Mongoose Status Mountain Bike<br>
+        </fieldset>
+        <p>Password: <input type="password" id="password" required
+            placeholder="Enter a password."></p>
+        <p>Message:</p><br>
+        <textarea id="message" required minlength="20" maxlength="200"
+            placeholder="Enter your message.">
+        </textarea>
+        <br>
+        <br>
+        <input type="button" id="submit" value="Submit">
+        <input type="button" id="reset" value="Reset">
+    </form>
 </body>
 </html>
